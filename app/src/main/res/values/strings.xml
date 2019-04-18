@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="profile">Profile</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="play">Play</string>
+    <string name="participated">Participated</string>
+    <string name="result">Result</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+</resources>
