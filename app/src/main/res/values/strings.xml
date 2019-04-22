@@ -9,4 +9,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="prasad_vennam">Prasad Vennam</string>
+    <string name="vennamprasad_gmail_com">vennamprasad@gmail.com</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="my_profile">My Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="top_players">Top Players</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="chat_with_us">Chat with us</string>
 </resources>

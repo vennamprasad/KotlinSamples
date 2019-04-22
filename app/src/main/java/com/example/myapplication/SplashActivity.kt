@@ -28,7 +28,7 @@ class SplashActivity : AppCompatActivity() {
                             Manifest.permission.CAMERA).whenPermissionsGranted {
                         Root_Path = filesDir.path
                         createDirectories()
-                        val splash_intent = Intent(this@SplashActivity, MainActivity::class.java)
+                        val splash_intent = Intent(this@SplashActivity, LoginActivity::class.java)
                         startActivity(splash_intent)
                         finish()
                     }.whenPermissionsRefused { }.execute(this@SplashActivity)
