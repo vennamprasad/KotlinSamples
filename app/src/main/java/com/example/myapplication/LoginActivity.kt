@@ -5,14 +5,13 @@ import android.os.Bundle
 import android.text.Editable
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_login.*
 import java.util.*
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var userName: EditText
-    private lateinit var password: EditText
+
     private val editorListener = TextView.OnEditorActionListener { v, actionId, event ->
         when (actionId) {
             EditorInfo.IME_ACTION_NEXT -> {
@@ -25,12 +24,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        ui()
-    }
-
-    private fun ui() {
-        userName = findViewById(R.id.userName)
-        password = findViewById(R.id.password)
         userName.setOnEditorActionListener(editorListener)
         password.setOnEditorActionListener(editorListener)
     }

@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Refer more and  Earn more"
+                android:text="REFER MORE AND  EARN MORE"
                 android:textColor="#fff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:padding="@dimen/_10sdp"
                 android:text="Invite your friends on App using your Promo Code to Earn Rs 10 when they join first match"
                 android:textColor="#fff"
                 android:textStyle="bold" />
@@ -45,9 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp"
                 android:background="@drawable/round_button"
-                android:onClick="login"
                 android:text="Get Refer Credit "
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
@@ -66,32 +66,91 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Refer Code"
+            android:padding="@dimen/_10sdp"
+            android:text="YOUR REFERRAL CODE"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/dotted"
             android:gravity="center"
             android:text="ABCDEFG"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/_30sdp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_5sdp"
-            android:background="@drawable/round_button"
+            android:gravity="center|start"
             android:onClick="login"
-            android:text="Get Refer Credit "
+            android:padding="@dimen/_10sdp"
+            android:text="How it's works ?"
             android:textAllCaps="false"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/bluesilk"
             android:textStyle="bold" />
-
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="User Register" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=">>" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Join Match" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=">>" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="You get Reward" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_button"
+        android:text="REFER NOW"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
 
 </LinearLayout>

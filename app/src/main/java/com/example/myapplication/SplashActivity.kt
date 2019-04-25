@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.Utils.Root_Path
+import com.example.myapplication.Utils.Companion.Root_Path
 import com.github.jksiezni.permissive.Permissive
 import java.io.File
 import java.io.FileOutputStream

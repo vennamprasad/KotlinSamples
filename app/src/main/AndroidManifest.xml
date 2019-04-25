@@ -11,6 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ReferAndEarn"></activity>
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
