@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.intro
 
 import android.Manifest
 import android.content.Intent
@@ -6,7 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.Utils.Companion.Root_Path
+import com.example.myapplication.R
+import com.example.myapplication.activities.Login
+import com.example.myapplication.utils.Utils
+import com.example.myapplication.utils.Utils.Companion.Root_Path
 import com.github.jksiezni.permissive.Permissive
 import java.io.File
 import java.io.FileOutputStream
@@ -28,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
                             Manifest.permission.CAMERA).whenPermissionsGranted {
                         Root_Path = filesDir.path
                         createDirectories()
-                        val splash_intent = Intent(this@SplashActivity, LoginActivity::class.java)
+                        val splash_intent = Intent(this@SplashActivity, Login::class.java)
                         startActivity(splash_intent)
                         finish()
                     }.whenPermissionsRefused { }.execute(this@SplashActivity)

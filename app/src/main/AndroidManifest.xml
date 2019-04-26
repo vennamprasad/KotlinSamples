@@ -5,28 +5,33 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".intro.MApplication"
         android:allowBackup="true"
         android:icon="@drawable/ico"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MyWallet"></activity>
-        <activity android:name=".ReferAndEarn" />
-        <activity android:name=".EditProfileActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activities.AboutUs"></activity>
+        <activity android:name=".activities.MyWallet" />
+        <activity android:name=".activities.ReferAndEarn" />
+        <activity android:name=".activities.EditProfile" />
+        <activity android:name=".activities.Login" />
+        <activity android:name=".intro.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.Home" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <receiver android:name=".intro.NetworkCheck" />
     </application>
 
 </manifest>

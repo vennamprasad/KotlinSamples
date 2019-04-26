@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,10 +7,12 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
+import com.example.myapplication.utils.Utils
 import kotlinx.android.synthetic.main.activity_login.*
 import java.util.*
 
-class LoginActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
     private val editorListener = TextView.OnEditorActionListener { v, actionId, event ->
         when (actionId) {
@@ -32,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
     fun login(view: View) {
         // validating credentials
         if (validate()) {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Home::class.java))
         }
     }
 

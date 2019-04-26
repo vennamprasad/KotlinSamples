@@ -6,9 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.myapplication.EditProfileActivity
 import com.example.myapplication.R
-import com.example.myapplication.ReferAndEarn
+import com.example.myapplication.activities.AboutUs
+import com.example.myapplication.activities.EditProfile
+import com.example.myapplication.activities.ReferAndEarn
 import kotlinx.android.synthetic.main.profile_fragment.view.*
 
 class Profile : Fragment() {
@@ -20,11 +21,15 @@ class Profile : Fragment() {
         // Get the text view widget reference from custom layout
 
         view.my_profile?.setOnClickListener {
-            val splash_intent = Intent(activity, EditProfileActivity::class.java)
+            val splash_intent = Intent(activity, EditProfile::class.java)
             startActivity(splash_intent)
         }
         view.refer_earn?.setOnClickListener {
             val splash_intent = Intent(activity, ReferAndEarn::class.java)
+            startActivity(splash_intent)
+        }
+        view.about_us?.setOnClickListener {
+            val splash_intent = Intent(activity, AboutUs::class.java)
             startActivity(splash_intent)
         }
         return view
