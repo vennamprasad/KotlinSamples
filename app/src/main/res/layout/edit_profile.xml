@@ -4,122 +4,130 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black">
-
+    <FrameLayout
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_2sdp">
 
         <ImageView
-            android:id="@+id/user_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@drawable/round_button"
-            android:padding="@dimen/_10sdp"
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/circle"
+            android:padding="@dimen/_25sdp"
+            android:scaleType="centerCrop"
             android:src="@drawable/user_profile"
-            android:tint="@color/colorPrimary" />
+            android:tint="@color/black" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/user_image"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="@dimen/_10sdp"
-            android:background="@drawable/save"
-            android:tint="@color/white" />
+            android:id="@+id/iv_camera"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/round_button"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edit_image"
+            android:tint="@color/colorPrimary" />
+    </FrameLayout>
 
-    </RelativeLayout>
-
-
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="Full Name"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Full Name"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="User Name"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="User Name"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="Email"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Email"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="Mobile"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Mobile"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="Date of Birth"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Date of Birth"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:hint="Password"
+        android:paddingStart="@dimen/_10sdp" />
 
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Password"
-            android:paddingStart="@dimen/_10sdp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:hint="Retype Password"
+        android:paddingStart="@dimen/_10sdp" />
 
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/round_button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold" />
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:hint="Retype Password"
-            android:paddingStart="@dimen/_10sdp" />
-
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:background="#fff"
-            android:elevation="5dp"
-            android:gravity="center|start"
-            android:orientation="horizontal"
-            android:paddingStart="@dimen/_2sdp">
-
-            <androidx.appcompat.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Male" />
-
-            <androidx.appcompat.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Female" />
-
-        </RadioGroup>
-    </LinearLayout>
 </LinearLayout>
